@@ -157,11 +157,15 @@ img {
 .specifics-list {
   display: flex;
 }
+.specifics-item:not(:last-child) {
+  margin-right: var(--tipical-margin-2);
+}
 .specifics-item-title {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .specifics-text {
   font-size: 14px;
@@ -289,7 +293,7 @@ img {
   font-family: inherit;
   border: 0;
   cursor: pointer;
-  margin-bottom: 34px;
+
   padding: 6px 22px;
 }
 
@@ -300,6 +304,7 @@ img {
 .portfolio-filter {
   justify-content: center;
   display: flex;
+  margin-bottom: var(--tipical-margin-1);
 }
 .portfolio-filter-item:not(:last-child) {
   margin-right: 8px;
@@ -323,7 +328,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  margin-top: 20px;
 }
 .portfolio-item-subtitle {
   font-size: 16px;
@@ -331,9 +335,10 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--main-color);
-  margin-bottom: 20px;
 }
 
 .portfolio-item-text {
+  margin-top: 20px;
   margin-left: 24px;
+  margin-bottom: 20px;
 }
